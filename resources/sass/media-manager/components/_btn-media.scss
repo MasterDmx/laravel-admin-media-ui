@@ -1,0 +1,17 @@
+.btn.btn-media {
+
+    &.btn-media--icon {
+        width: calc(2.1rem + 2px);
+        padding: 0;
+        line-height: 2.1rem;
+        font-size: 20px;
+    }
+
+    &.btn-media--default {
+        color: #a9aeb3;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

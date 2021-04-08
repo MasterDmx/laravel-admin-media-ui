@@ -1,0 +1,6 @@
+.media-cards {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 180px);
+    justify-content: space-evenly;
+}

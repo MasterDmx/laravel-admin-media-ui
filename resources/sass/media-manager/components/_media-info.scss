@@ -1,0 +1,19 @@
+.media-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__name {
+        color: #707a84;
+        padding-right: 10px;
+    }
+
+    &__value {
+        color: #00bc7e;
+        text-align: right;
+    }
+}
+
+.media-info + .media-info {
+    padding-top: 7px;
+}

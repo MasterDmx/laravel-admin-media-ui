@@ -1,0 +1,23 @@
+{
+    "name": "masterdmx/laravel-admin-media-ui",
+    "description": "UI manager from laravel-media and laravel-admin",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Sergey Krening",
+            "email": "masterdmx3325@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MasterDmx\\LaravelAdminMediaUI\\": "src/"
+        }
+    },
+    "version": "1.0.0",
+    "require": {
+        "masterdmx/laravel-admin": "1.*",
+        "masterdmx/laravel-media": "1.*"
+    }
+}

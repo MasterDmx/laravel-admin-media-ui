@@ -1,0 +1,133 @@
+
+.media-fields {
+
+
+    .media-image-select {
+        &__wrapper {
+            background-color: #eeeeee;
+            border-radius: 9px;
+            position: relative;
+        }
+
+        &__icon {
+            font-size: 25px;
+            margin-bottom: 5px
+        }
+
+        &__content {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            text-align: center;
+            width: 100%;
+            z-index: 3;
+        }
+
+        &__dilator {
+            display: block;
+            width: 100%;
+        }
+    }
+
+
+    .media-image {
+        &__icon {
+            font-size: 25px;
+            margin-bottom: 5px
+        }
+
+        &__content {
+            border-radius: 9px;
+            position: relative;
+            border-radius: 9px;
+            transition: all .4s;
+        }
+
+        &__img {
+            display: block;
+            width: 100%;
+            border-radius: 9px;
+            min-height: 70px;
+            transition: all .4s;
+            cursor: pointer;
+        }
+
+        &__actions {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10px;
+        }
+
+        &__action {
+            visibility: hidden;
+            transition: all 0.4s ease-in-out 0s;
+            opacity: 0;
+            border: 0;
+            outline: none;
+            font-size: 20px;
+            line-height: 0;
+            display: inline-block;
+            background: #ffffffba;
+            padding: 9px;
+            margin: 0;
+            border-radius: 50%;
+            color: #575757;
+
+            &:hover {
+                background-color: #fff;
+            }
+
+            &--remove {
+                padding: 5px 13px;
+
+                &:hover {
+                    color: #ff4f4f;
+                }
+            }
+        }
+
+        &__description {
+            input {
+                width: 100%;
+                text-align: center;
+                border: 0;
+                outline: none;
+                background: none;
+                border-bottom: 1px solid transparent;
+                padding: 10px 0;
+            }
+
+            input:focus {
+                border-color: #eeeeee;
+            }
+        }
+
+        &:hover {
+            .media-image__content {
+                background-color: #000;
+            }
+
+            .media-image__img {
+                opacity: .7;
+            }
+
+            .media-image__action {
+                margin: 0 5px;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+
+
+
+
+}

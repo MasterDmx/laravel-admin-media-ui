@@ -1,0 +1,29 @@
+.media-search {
+    position: relative;
+    min-width: 50%;
+
+    &__icon {
+        position: absolute;
+        font-size: 16px;
+        top: 15px;
+    }
+
+    input {
+        background: none;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 14px;
+        padding: 17px 0 13px 0;
+        padding-left: 35px;
+        width: 100%;
+    }
+
+    input:focus ~ &__icon {
+        color: #1dc9b7;
+    }
+
+    &:hover &__icon {
+        color: #1dc9b7;
+    }
+}

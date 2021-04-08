@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+.media-manager-body-disable {
+    overflow: hidden !important;
+}
+
+.media-manager {
+    color: #fff;
+
+    .vm--modal {
+        left: 0 !important;
+        top: 0 !important;
+        height: 100vh !important;
+        width: 100% !important;
+        border-radius: 0;
+    }
+
+    @import "components/media-ui";
+    @import "components/media-workspace";
+    @import "components/media-main";
+    @import "components/media-toolbar";
+    @import "components/media-search";
+    @import "components/media-control";
+    @import "components/media-cards";
+    @import "components/media-card";
+    @import "components/btn-media";
+    @import "components/media-info";
+    @import "components/media-form";
+
+    @import "components/media-details";
+
+}
+
+
+
+
+

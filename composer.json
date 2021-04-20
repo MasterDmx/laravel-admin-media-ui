@@ -16,8 +16,5 @@
         }
     },
     "version": "1.0.1",
-    "require": {
-        "masterdmx/laravel-admin": "1.*",
-        "masterdmx/laravel-media": "1.*"
-    }
+    "require": {}
 }

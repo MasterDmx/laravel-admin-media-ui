@@ -11,5 +11,18 @@
     &__col {
         display: table-cell;
         vertical-align: top;
+
+        &--min {
+            height: 1px;
+        }
+    }
+
+    &__col {
+        display: table-cell;
+        vertical-align: top;
+
+        &--min {
+            height: 1px;
+        }
     }
 }

@@ -26,12 +26,17 @@ export default {
     },
     computed: {
         isSelected: function () {
-            return this.state.activeFile !== null && this.state.activeFile !== undefined && this.file.id === this.state.activeFile.id;
+            return this.state.selected !== null && this.state.selected !== undefined && this.file.id === this.state.selected.id;
         }
     },
     methods: {
         select: function () {
-            if (this.state.activeFile === null || this.state.activeFile === undefined || this.file.id !== this.state.activeFile.id) {
+
+            console.log('//////////////////////////////////')
+            console.log(this.state)
+            console.log('//////////////////////////////////')
+
+            if (this.state.selected === null || this.state.selected === undefined || this.file.id !== this.state.selected.id) {
                 this.$emit('file-selected', this.file);
             }
         },

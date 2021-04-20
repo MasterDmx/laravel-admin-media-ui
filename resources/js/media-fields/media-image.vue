@@ -7,8 +7,9 @@
                 <img class="media-image__img" :src="url" alt="" @click="replace()">
 
                 <div class="media-image__actions">
-                    <a class="media-image__action" target="_blank" :href="url"><i class="fal fa-eye"></i></a>
-                    <button type="button" class="media-image__action  media-image__action--remove" @click="reset()"><i class="fal fa-times"></i></button>
+                    <a title="Открыть в новом окне"  class="media-image__action" target="_blank" :href="url"><i class="fal fa-eye"></i></a>
+                    <button title="Заменить" type="button" class="media-image__action  media-image__action--remove" @click="replace()"><i class="fal fa-angle-up"></i></button>
+                    <button title="Очистить поле" type="button" class="media-image__action  media-image__action--remove" @click="reset()"><i class="fal fa-times"></i></button>
                 </div>
             </div>
             <div class="media-image__description">

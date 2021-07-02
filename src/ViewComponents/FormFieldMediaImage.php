@@ -34,6 +34,8 @@ class FormFieldMediaImage extends Component
      */
     public string $title;
 
+    public string $classes;
+
     /**
      * FormFieldMediaImage constructor.
      *
@@ -42,12 +44,13 @@ class FormFieldMediaImage extends Component
      * @param string $id
      * @param string $title
      */
-    public function __construct($name, $context = 'default', $id = '', $title = '')
+    public function __construct($name, $context = 'default', $id = '', $title = '', $classes = '')
     {
         $this->name = $name;
         $this->context = $context;
         $this->id = $id;
         $this->title = $title;
+        $this->classes = $classes;
     }
 
     public function render()

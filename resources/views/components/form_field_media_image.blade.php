@@ -1,3 +1,3 @@
-<div class="media-fields">
-    <media-image name="{{ $name }}" context="{{ $context }}" settable-id="{{ $id }}" settable-title="{{ $title }}"></media-image>
-</div>
+<media-image name="{{ $name }}" context="{{ $context }}" settable-id="{{ $id }}" settable-title="{{ $title }}" classes="{{ $classes }}"></media-image>
+
+

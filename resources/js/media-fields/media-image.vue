@@ -1,8 +1,8 @@
 <template>
-    <div class="row media-image-list">
+    <div :class="classes">
 
         <!-- Установленное изображение -->
-        <div class="col-md-4 col-lg-3 media-image-list__item media-image" v-if="isDefined">
+        <div class="media-image" v-if="isDefined">
             <div class="media-image__content">
                 <img class="media-image__img" :src="url" alt="" @click="replace()">
 
@@ -20,7 +20,7 @@
         </div>
 
         <!-- Выбор изображения -->
-        <div class="col-md-4 col-lg-3 media-image-list__item media-image-select" @click="select()" v-else>
+        <div class="media-image-select" @click="select()" v-else>
             <div class="media-image-select__wrapper">
                 <img class="media-image-select__dilator" src="/assets/admin/img/modules/media-manager/wrapper.png" alt="">
                 <div class="media-image-select__content">
@@ -35,7 +35,7 @@
 
 <script>
 export default {
-    props: ['name', 'context', 'settableId', 'settableTitle'],
+    props: ['name', 'context', 'settableId', 'settableTitle', 'classes', 'isList'],
     computed: {
         isDefined: function () {
             return this.id !== undefined && this.id !== null;
